@@ -8,3 +8,15 @@
 deployment
 lib_*
 .DS_Store
+
+
+*.o
+sources/*.h
+sources/*.cpp
+sources/*.qrc
+
+sources/.qm/
+
+!sources/main.cpp
+!sources/options.h
+!sources/options.cpp

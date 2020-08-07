@@ -8,8 +8,8 @@
 # (this is forced to true for Windows or Mac OS X)
 # Uncomment a line if your distribution doesn't come with some of the following libraries
 #DEFINES += USE_LOCAL_RTMIDI
-#DEFINES += USE_LOCAL_STK
-#DEFINES += USE_LOCAL_QCUSTOMPLOT
+DEFINES += USE_LOCAL_STK
+DEFINES += USE_LOCAL_QCUSTOMPLOT
 
 # Polyphone version
 DEFINES += SOFT_VERSION=\\\"2.2.0\\\"
@@ -71,7 +71,7 @@ unix:!macx {
         PREFIX = /usr/local
     }
     INCLUDEPATH += $$PREFIX/include/jack \
-        lib/flac
+        lib/flac /usr/include/jack 
     DESTDIR=bin
     
     # Install target
